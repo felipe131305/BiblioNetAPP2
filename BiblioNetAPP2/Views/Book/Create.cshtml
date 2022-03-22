@@ -9,9 +9,13 @@ ViewData["Title"] = "Book";
 
 <form asp-action="Create">
 <div class="mb-3">
-<label asp-for="BookName" class="form-label"></label>
-<input type="text" asp-for="BookName" class="form-control" />
-<span asp-validation-for="BookName" class="text-danger"></span>
+<label asp-for="Title" class="form-label"></label>
+<input type="text" asp-for="Title" class="form-control" />
+<span asp-validation-for="Title" class="text-danger"></span>
 </div>
 <button type="submit" class="btn btn-primary">Create</button>
 </form>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"/>
+}
